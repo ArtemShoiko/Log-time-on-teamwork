@@ -12,14 +12,13 @@ const successMessage = Selector('.w-toaster__content').withText('Time logged suc
 const task = 'General study';
 const taskName = Selector('.task-name a').withText(`${task}`);
 
-
 fixture `Lets log time everyday`
     .page `https://keenethics.teamwork.com`;
 
 test('teamwork', async t => {
     await t
       .typeText(emailInput, 'artem.shoiko@keenethics.com')
-      .typeText(passwordInput, 'Game2017')
+      .typeText(passwordInput, 'password')
       .click(loginBTN)
       .navigateTo('https://keenethics.teamwork.com/#projects/130603/tasks')
       .click(taskName)
