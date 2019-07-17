@@ -35,7 +35,7 @@ test('teamwork', async t => {
       .typeText(emailInput, email)
       .typeText(passwordInput, password)
       .click(loginBTN)
-      .navigateTo('../#projects/475302/tasks')
+      .navigateTo('../#/projects/list/active')
       .click(project)
       .click(tasksBTN)
       .click(taskName)
