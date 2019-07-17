@@ -1,0 +1,15 @@
+{
+  "name": "techtalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "testcafe": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "logTime": "testcafe chrome tests/"
+  },
+  "author": "",
+  "license": "ISC"
+}
